@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <title>Result</title>
+  </head>
+  <body>
+    <h1>RESULT</h1>
+    <p>{{input}}</p>
+    <input type="button" name="button" value="CLICK ME" onclick="abc()">
+    <script type="text/javascript" src="{% static '/js/main.js' %}"></script>
+  </body>
+</html>

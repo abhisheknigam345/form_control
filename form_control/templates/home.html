@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+  </head>
+  <body>
+    <h1>FORM</h1>
+    <form action="{% url 'result' %}">
+    {% csrf_token %}
+    <input type="text" name="user_input">
+    <input type="submit" value="Click Me">
+    </form>
+  </body>
+</html>
